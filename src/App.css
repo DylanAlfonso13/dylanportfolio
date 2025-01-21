@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply bg-background-light dark:bg-background-dark;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100px, 100px);
+  }
+  50% {
+    transform: translate(-100px, -100px);
+  }
+  75% {
+    transform: translate(100px, -100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-100px, 100px);
+  }
+  50% {
+    transform: translate(100px, -100px);
+  }
+  75% {
+    transform: translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-move1 {
+  animation: move1 10s linear infinite;
+}
+
+.animate-move2 {
+  animation: move2 10s linear infinite;
+}
