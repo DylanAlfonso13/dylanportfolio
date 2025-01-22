@@ -6,6 +6,17 @@
   @apply bg-background-light dark:bg-background-dark;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @keyframes move1 {
   0% {
     transform: translate(0, 0);
